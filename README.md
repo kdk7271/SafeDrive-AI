@@ -35,7 +35,35 @@
 ![Image](https://github.com/user-attachments/assets/df4700c3-c5e4-4470-92ff-fd12ecc00372)
 
 ```
-1. CNN 기반 이진 분류 모델로, 입력 이미지(26x34)를 Conv2D와 MaxPooling을 거쳐 특징을 추출한 후, Dense 레이어로 분류 수행하였다.
+1. CNN 기반 이진 분류 모델로, 입력 이미지(26x34)를 Conv2D와 MaxPooling을 거쳐 특징을 추출한 후, Dense 레이어로 분류하였다.
 2. 모델링 구성: 3개의 Conv2D + MaxPooling, Flatten 후 2개의 Dense 레이어(ReLU 활성화, 최종 출력 1개) 를 사용하였다.
 3. 하이퍼파라미터: Adam Optimizer, Binary Cross Entropy, 50 Epochs, Batch Size 32 을 사용하였다.
 ```
+
+## 모델링 결과
+
+![Image](https://github.com/user-attachments/assets/75251593-ce00-4c26-985b-7fb1e6fcf606)
+
+![Image](https://github.com/user-attachments/assets/4acd5d7a-0c0a-46eb-8e06-a79f884fdeaf)
+
+* 테스트 결과 모든 상황에 눈의 개폐 여부를 정확하게 분류하였다.
+
+![Image](https://github.com/user-attachments/assets/89ad742d-c3ad-4948-935c-e7f240b51df1) ![Image](https://github.com/user-attachments/assets/cd80297e-dcf1-4590-90c6-c2c1c968119e)
+
+* 실제 상황에서도 눈의 개폐 여부를 적절히 분류하였다.
+
+
+## 시스템 구축
+
+
+* 졸음운전 상황(1) 경고
+
+[https://github.com/user-attachments/assets/4bb8cba7-b09c-4708-a11f-4c95d7af8a90 ](https://github.com/user-attachments/assets/f22aacb4-a8c5-4bf7-bb3c-3d2c0b0f2f36)
+
+* 졸음운전 상황(2) 경고
+  
+[https://github.com/user-attachments/assets/f22aacb4-a8c5-4bf7-bb3c-3d2c0b0f2f36](https://github.com/user-attachments/assets/ba0c4aab-6f70-49e5-86b7-56c03811b716)
+
+* 전방 주시 태만 경고
+  
+[https://github.com/user-attachments/assets/cb82f09f-7e9e-4ebd-9870-045f94909db1](https://github.com/user-attachments/assets/cb82f09f-7e9e-4ebd-9870-045f94909db1)
