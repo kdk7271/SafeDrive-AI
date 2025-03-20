@@ -67,3 +67,11 @@
 * 전방 주시 태만 경고
   
 [https://github.com/user-attachments/assets/cb82f09f-7e9e-4ebd-9870-045f94909db1](https://github.com/user-attachments/assets/cb82f09f-7e9e-4ebd-9870-045f94909db1)
+
+![Image](https://github.com/user-attachments/assets/7eaeebcd-5d1b-4ec9-b2ff-18e3318d9257)
+
+* 3회 이상 연속 경고시 응급 상황으로 판단하여 긴급 문자를 자동으로 발송합니다.
+
+## 트러블 슈팅
+
+
