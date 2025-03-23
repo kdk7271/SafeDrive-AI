@@ -48,57 +48,7 @@
 ```
 1. CNN 기반 이진 분류 모델로, 입력 이미지(26x34)를 Conv2D와 MaxPooling을 거쳐 특징을 추출한 후, Dense 레이어로 분류하였습니다.
 2. 모델링 구성: 3개의 Conv2D + MaxPooling, Flatten 후 2개의 Dense 레이어(ReLU 활성화, 최종 출력 1개) 를 사용하였습니다.
-3. 하이퍼파라미터: Adam Optimizer, Binary Cross Entropy, 50 Epochs, Batch Size 32 을 사용하였습니다.
-```
-
-## 모델링 결과
-
-![Image](https://github.com/user-attachments/assets/75251593-ce00-4c26-985b-7fb1e6fcf606)
-
-![Image](https://github.com/user-attachments/assets/4acd5d7a-0c0a-46eb-8e06-a79f884fdeaf)
-
-* 테스트 결과 모든 상황에 눈의 개폐 여부를 정확하게 분류하였습니다.
-
-![Image](https://github.com/user-attachments/assets/89ad742d-c3ad-4948-935c-e7f240b51df1) ![Image](https://github.com/user-attachments/assets/cd80297e-dcf1-4590-90c6-c2c1c968119e)
-
-* 실제 상황에서도 눈의 개폐 여부를 적절히 분류하였습니다.
-
-## 시스템 흐름도
-
-![Image](https://github.com/user-attachments/assets/67636289-5c17-47f8-908e-c790d8d04c0f)
-
-## 시스템 구축
-
-
-* 졸음운전 상황(1) 경고
-
-[https://github.com/user-attachments/assets/4bb8cba7-b09c-4708-a11f-4c95d7af8a90 ](https://github.com/user-attachments/assets/f22aacb4-a8c5-4bf7-bb3c-3d2c0b0f2f36)
-
-* 졸음운전 상황(2) 경고
-  
-[https://github.com/user-attachments/assets/f22aacb4-a8c5-4bf7-bb3c-3d2c0b0f2f36](https://github.com/user-attachments/assets/ba0c4aab-6f70-49e5-86b7-56c03811b716)
-
-* 전방 주시 태만 경고
-  
-[https://github.com/user-attachments/assets/cb82f09f-7e9e-4ebd-9870-045f94909db1](https://github.com/user-attachments/assets/cb82f09f-7e9e-4ebd-9870-045f94909db1)
-
-![Image](https://github.com/user-attachments/assets/7eaeebcd-5d1b-4ec9-b2ff-18e3318d9257)
-
-* 3회 이상 연속 경고시 응급 상황으로 판단하여 긴급 문자를 자동으로 발송합니다.
-
-## 개선사항
-
-## 1. 모델 정확도 개선
-
-![Image](https://github.com/user-attachments/assets/566102ea-c38e-4d63-9d06-e10a372fb41b)
-
-* 첫 모델 설계 및 학습시 사용자 이미지 전체를 학습한 결과 약 70% 의 정확도를 달성하였습니다.
-* 졸음 운전, 전방 주시 태만 이라는 응급상황에 사용되는 모델인만큼 정확도를 높여야할 필요성을 찾았습니다.
-* 이에 분류 프로세스를 개선하였습니다.
-  
-```
-1. 기존 사용자 이미지 전체를 분류하는 모델에서 사용자의 눈 이미지만을 분류하는 모델로 변경하여 학습하였습니다.
-2. 이미지에서 사용자 얼굴을 찾고 얼굴에서 눈 부분을 찾는 프로세스를 추가 하였습니디.
+3. 하이퍼파라미터: Adam Optimizer, Bina다.
 ```
 * 개선 결과 70% 분류 정확도를 보인는 모델을 95% 이상의 성능을 보이는 모델로 개선할 수 있었습니다.
 
